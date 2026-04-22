@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza Order Form</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: white;
+}
+
+form {
+    width: 700px;
+    margin: 20px auto;
+    background: rgba(210, 208, 208, 0.673);
+    border: 3px rgb(122, 120, 120);
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    border: 1px solid rgb(123, 121, 121);
+}
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+}
+
+select, textarea {
+    width: 95%;
+    padding: 5px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<form>
+<fieldset>
+<legend align="center">PIZZA ORDER FORM</legend>
+
+<fieldset>
+<legend>Delivery Address</legend>
+
+<table>
+<tr>
+<td>Full Name:</td>
+<td><input type="text" placeholder="Full Name"></td>
+
+<td>Street Address:</td>
+<td><input type="text" placeholder="Address"></td>
+</tr>
+
+<tr>
+<td>Phone:</td>
+<td><input type="text" placeholder="Phone"></td>
+
+<td>Email:</td>
+<td><input type="email" placeholder="Email"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="password" placeholder="Password"></td>
+</tr>
+</table>
+
+</fieldset>
+
+<fieldset>
+<legend>Payment Information</legend>
+
+<table>
+<tr>
+<td>Card Type:</td>
+<td>
+<select>
+<option>Visa</option>
+<option>Mastercard</option>
+<option>Discover</option>
+</select>
+</td>
+
+<td>Card Number:</td>
+<td><input type="text" placeholder="Card Number" ></td>
+</tr>
+
+<tr>
+<td>Name on Card:</td>
+<td><input type="text" placeholder="Name"></td>
+</tr>
+</table>
+
+</fieldset>
+
+<fieldset>
+<legend>Customize Your Pizza</legend>
+
+<table>
+<tr>
+<td>Pizza size:</td>
+<td>
+<select>
+<option selected>large</option>
+<option>medium</option>
+<option>small</option>
+</select>
+</td>
+
+<td>Quantity:</td>
+<td><input type="number"></td>
+</tr>
+
+<tr>
+<td>Spices:</td>
+<td colspan="3">
+  Black pepper<input type="checkbox"> 
+  Bell peppers<input type="checkbox"> 
+  mayonnaise<input type="checkbox">
+</td>
+</tr>
+
+<tr>
+<td>Other Requirements:</td>
+<td>
+  <textarea cols="13" rows="3" placeholder="Any Other Requirements"></textarea>
+</td>
+
+
+<td>Meat:</td>
+<td>
+Fish<input type="radio" name="meat"> 
+Cow<input type="radio" name="meat"> 
+Chicken<input type="radio" name="meat"> 
+</td>
+</tr>
+
+</table>
+
+</fieldset>
+
+
+
+<input type="reset" value="Clear Order">
+<input type="submit" value="Place Order">
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
